@@ -1,0 +1,55 @@
+******************************************************************************
+                  TI ARM Linker PC v5.0.4                      
+******************************************************************************
+>> Linked Wed Mar 27 00:42:10 2019
+
+OUTPUT FILE NAME:   <HW2.out>
+ENTRY POINT SYMBOL: 0
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+----------------------  --------  ---------  --------  --------  ----  --------
+  RAM                   00000020   ffffffe0  000001b6  fffffe2a  RWIX
+
+
+SEGMENT ALLOCATION MAP
+
+run origin  load origin   length   init length attrs members
+----------  ----------- ---------- ----------- ----- -------
+00000020    00000020    000001b6   000001b6    r-x
+  00000020    00000020    000001b6   000001b6    r-x .text
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.text      0    00000020    000001b6     
+                  00000020    000001b6     2014311274.obj (.text)
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+00000020   __TI_static_base__
+ffffffff   __binit__
+ffffffff   __c_args__
+00000021   __stack
+ffffffff   binit
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00000020   __TI_static_base__
+00000021   __stack
+ffffffff   __binit__
+ffffffff   __c_args__
+ffffffff   binit
+
+[5 symbols]
